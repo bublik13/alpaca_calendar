@@ -3,28 +3,71 @@
     padding: 0;
     box-sizing: border-box;
 }
-.body{
-    font-family: 'Roboto', sans-serif;
-}
-.section{
-    min-width: 240px;
-    margin: 0 auto;
-}
-.conteiner{
-
-}
 .calendar{
-    background:url(../img/alpaca.jpg) no-repeat;
+    background: url(../img/alpaca.jpg) no-repeat center center/cover;
+    width: 320px;
+    min-width: 240px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    border-radius: 6px;
 }
+
 .calendar__months{
-     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8px 16px 8px;
+}
+.calendar__button{
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendar__icon{
+    width: 8px;
+    height: 12px;
+    color: #ffff;
+}
+.calendar__icon--rotate{
+    transform: rotate(180deg);
 }
 .calendar__month{
-
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 .calendar__days{
-
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
 }
 .calendar__day{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.calendar__day--active{
+    background-color: #2D9CDB;
+    
+}
+.calendar__day--start{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.calendar__day--end{
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
