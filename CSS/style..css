@@ -1,0 +1,30 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family: 'Roboto', sans-serif;
+}
+.section{
+    min-width: 240px;
+    margin: 0 auto;
+}
+.conteiner{
+
+}
+.calendar{
+    background:url(../img/alpaca.jpg) no-repeat;
+}
+.calendar__months{
+     
+}
+.calendar__month{
+
+}
+.calendar__days{
+
+}
+.calendar__day{
+
+}
